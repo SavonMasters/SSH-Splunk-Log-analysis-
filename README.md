@@ -60,7 +60,7 @@ Monitor Connections without Authentications for suspicious behaviour.
 ![image alt](https://github.com/SavonMasters/SSH-Splunk-Log-analysis-/blob/122408a77b00cd5d4671b482437b5f42ae797880/Splunk%20SSH%208.png)
 I went ahead and made a dashboard of the amount of times Multiple Failed Authentication Attempts and the Successful SSH Logins to gather if the highest failed authentications lead to any successful SSH logins.
 
-
+![image alt](https://github.com/SavonMasters/SSH-Splunk-Log-analysis-/blob/2cc66d2ff6f275987c1ea33620fc5fe05888b9a1/Splunk%20SSH%209.png)
 I also created an alert to see the Multiple Failed Authentication Attempts happens and the source and destination IP address as part of the alert to be in front of the attack before it transpires. 
 
 
