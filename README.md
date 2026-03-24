@@ -25,7 +25,7 @@ On April 24th, 2025 6:25 am I received an alert about a potential Brute force at
 
 First, I wanted to see how many logs there were in the file and how long the event took place, which I did by looking at the timeline.
 
-
+![image alt](https://github.com/SavonMasters/SSH-Splunk-Log-analysis-/blob/503ccf433db9fc55a7c3cf29233353a40abb7e02/Splunk%20SSH%202.png)
 Second, I wanted to see the different type of events in the log and how many of each took place, I used the “Stats count by event_type” to do this. 
 
 
