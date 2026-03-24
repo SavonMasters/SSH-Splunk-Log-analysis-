@@ -39,8 +39,8 @@ Fifthly, I wanted to see the number of Successful SSH Logins and the individuals
 
 ![image alt](https://github.com/SavonMasters/SSH-Splunk-Log-analysis-/blob/8dc70033bcf940283b783c3e853037cef621fda9/Splunk%20SSH%206.png)
 I wanted to compare the Successful SSH Logins with the Multiple Failed Authentication Attempts to see if the account was compromised. It was able to happen on the account “10.0.0.28” since it was Brute forced and was able to logon. 
- 
 
+![image alt](https://github.com/SavonMasters/SSH-Splunk-Log-analysis-/blob/b49e072a75518c6328a9f9b8aaeb12fcd6139ad8/Splunk%20SSH%207.png)
 Sixly, I searched for the Connection without Authentication as a caution because Connections without Authentications often can be used for port scanning. I queried “Event_type Connections without Authentication | stats count by id.org_h, id.org_p, id.resp_h, id.resp_p | sort - count.” and brought in the information. 
 
 					Conclusion 
