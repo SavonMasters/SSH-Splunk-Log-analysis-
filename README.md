@@ -21,7 +21,7 @@ On April 24th, 2025 6:25 am I received an alert about a potential Brute force at
 
 
 
-![image alt] {https://github.com/SavonMasters/SSH-Splunk-Log-analysis-/blob/7a44c4c7fc6ea50826ed2c360670bc036ca1485d/Splunk%20SSH.png}
+![image alt][https://github.com/SavonMasters/SSH-Splunk-Log-analysis-/blob/7a44c4c7fc6ea50826ed2c360670bc036ca1485d/Splunk%20SSH.png]
 
 First, I wanted to see how many logs there were in the file and how long the event took place, which I did by looking at the timeline.
 
