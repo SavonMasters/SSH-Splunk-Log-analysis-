@@ -37,8 +37,7 @@ Fourthly, I wanted to see the number of Multiple Failed Authentication Attempts 
 ![image alt](https://github.com/SavonMasters/SSH-Splunk-Log-analysis-/blob/c6f7a401f326f9356a1f6f325e209b02dd53b1a4/Splunk%20SSH%205.png)
 Fifthly, I wanted to see the number of Successful SSH Logins and the individuals accounts it accepted, to accomplish this I used “Event_type Successful SSH logins | stats count by id.org_h, id.resp_h | sort - count.”.
 
-
-
+![image alt](https://github.com/SavonMasters/SSH-Splunk-Log-analysis-/blob/8dc70033bcf940283b783c3e853037cef621fda9/Splunk%20SSH%206.png)
 I wanted to compare the Successful SSH Logins with the Multiple Failed Authentication Attempts to see if the account was compromised. It was able to happen on the account “10.0.0.28” since it was Brute forced and was able to logon. 
  
 
