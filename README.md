@@ -34,8 +34,7 @@ Thirdly, I wanted to see the number of failed SSH logins and where they were ori
 ![image alt](https://github.com/SavonMasters/SSH-Splunk-Log-analysis-/blob/e4f65596687933e602cc2493622688a532fa65ea/Splunk%20SSH%204.png)
 Fourthly, I wanted to see the number of Multiple Failed Authentication Attempts from the source IP address and the destination IP address it tried to enter into and the number of times it occurred, I searched “Event_type Multiple Failed Authentication Attempts | stats count by id.org_h, id.resp_h | sort - count.”. This is a complete indicator of a Brute force attack for the amount of failed authentications attempts in the short span of time.
 
-
-
+![image alt](https://github.com/SavonMasters/SSH-Splunk-Log-analysis-/blob/c6f7a401f326f9356a1f6f325e209b02dd53b1a4/Splunk%20SSH%205.png)
 Fifthly, I wanted to see the number of Successful SSH Logins and the individuals accounts it accepted, to accomplish this I used “Event_type Successful SSH logins | stats count by id.org_h, id.resp_h | sort - count.”.
 
 
