@@ -57,6 +57,7 @@ Create an alert for Failed SSH Logins and Multiple Failed Authentication Attempt
 Create a rule to block IP addresses that try Multiple Failed Authentication Attempts in a shorten time window. 
 Monitor Connections without Authentications for suspicious behaviour. 
 
+![image alt](https://github.com/SavonMasters/SSH-Splunk-Log-analysis-/blob/122408a77b00cd5d4671b482437b5f42ae797880/Splunk%20SSH%208.png)
 I went ahead and made a dashboard of the amount of times Multiple Failed Authentication Attempts and the Successful SSH Logins to gather if the highest failed authentications lead to any successful SSH logins.
 
 
