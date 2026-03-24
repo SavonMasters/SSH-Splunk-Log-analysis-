@@ -2,22 +2,16 @@
 
 
 Title: Splunk SSH Log analysis 
+
 Analyst: Savon Masters 
+
 Date: January 31st 2026
 
-					Summary
+											Summary
 On April 24th, 2025 6:25 am I received an alert about a potential Brute force attack on the SSH system that had taken place. I investigated to see the legitimacy of the alert.
 
-					Investigation 
 
-Title: Splunk SSH Log analysis 
-Analyst: Savon Masters 
-Date: January 31st 2026
-
-					Summary
-On April 24th, 2025 6:25 am I received an alert about a potential Brute force attack on the SSH system that had taken place. I investigated to see the legitimacy of the alert.
-
-					Investigation 
+										Investigation 
 
 
 
@@ -43,16 +37,16 @@ I wanted to compare the Successful SSH Logins with the Multiple Failed Authentic
 ![image alt](https://github.com/SavonMasters/SSH-Splunk-Log-analysis-/blob/b49e072a75518c6328a9f9b8aaeb12fcd6139ad8/Splunk%20SSH%207.png)
 Sixly, I searched for the Connection without Authentication as a caution because Connections without Authentications often can be used for port scanning. I queried “Event_type Connections without Authentication | stats count by id.org_h, id.org_p, id.resp_h, id.resp_p | sort - count.” and brought in the information. 
 
-					Conclusion 
+											Conclusion 
 I finalized that a Brute force attack took place April 24th, 2025 6:20:09:508 am - 6:20:09:524 am. I could find that nothing else happened on that day in the system. The account “10.0.0.24” and others were infected. 
 
-					IOCs
+												IOCs
 There were over 808 Failed SSH Logins and Multiple Failed Authentication Attempts that were recorded in this event.
 This was a Brute force attack based on the fact to have this excessive login failures in the span of 1 second.
 One of the accounts “10.0.0.24” was compromised shown by it appeared on the Successful SSH Logins and Multiple Failed Authentication Attempts event types.
 A big amount of Connections without Authentication which can be used for port scanning.
 
-					Recommendations 
+											Recommendations 
 Create an alert for Failed SSH Logins and Multiple Failed Authentication Attempts to be aware of the attack quicker.
 Create a rule to block IP addresses that try Multiple Failed Authentication Attempts in a shorten time window. 
 Monitor Connections without Authentications for suspicious behaviour. 
@@ -64,7 +58,7 @@ I went ahead and made a dashboard of the amount of times Multiple Failed Authent
 I also created an alert to see the Multiple Failed Authentication Attempts happens and the source and destination IP address as part of the alert to be in front of the attack before it transpires. 
 
 
-					Things I Learned 
+										Things I Learned 
 Better use of the Splunk platform through alerts, dashboards, and SQL.
 How to watch Brute force, password spraying, and port scanning in normal logs.
 The right way to analyze SSH logs. 
